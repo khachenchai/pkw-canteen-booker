@@ -54,6 +54,12 @@ class _CreateAccountState extends State<CreateAccount> {
                 buildTitle('รูปภาพ :'),
                 buildSubTitle(),
                 buildAvatar(size),
+                IconButton(
+                  onPressed: () => {Navigator.pushNamed(context, MyConstant.routeChooseRoll)}, 
+                  icon: Icon(
+                    Icons.add,
+                    size: 36,
+                  ))
               ],
             ),
           ),

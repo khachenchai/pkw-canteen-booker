@@ -11,6 +11,7 @@ class MyConstant {
   static String routeCreateAccount = '/createAccount';
   static String routeBuyerSurvice = '/buyerService';
   static String routeSellerSurvice = '/sellerService';
+  static String routeChooseRoll = '/chooseRoll';
 
   //Image
   static String image1 = 'images/image1.png';
