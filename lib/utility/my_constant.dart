@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class MyConstant {
   
@@ -13,6 +14,7 @@ class MyConstant {
 
   //Image
   static String image1 = 'images/image1.png';
+  static String image2 = 'images/image2.png';
   static String avatar = 'images/avatar.png';
 
   //Color
@@ -26,12 +28,27 @@ class MyConstant {
     color: dark,
     fontWeight: FontWeight.bold
   );
-    TextStyle h2Style() => TextStyle(
+  TextStyle h2Style() => TextStyle(
     fontSize: 18,
     color: dark,
     fontWeight: FontWeight.w700
   );
-    TextStyle h3Style() => TextStyle(
+  TextStyle h3Style() => TextStyle(
+    fontSize: 14,
+    color: dark,
+    fontWeight: FontWeight.normal
+  );
+  TextStyle h1kanit() => GoogleFonts.kanit(
+    fontSize: 24,
+    color: Colors.black,
+    fontWeight: FontWeight.bold
+  );
+  TextStyle h2kanit() => GoogleFonts.kanit(
+    fontSize: 18,
+    color: Colors.black,
+    fontWeight: FontWeight.w600
+  );
+  TextStyle h3kanit() => GoogleFonts.kanit(
     fontSize: 14,
     color: dark,
     fontWeight: FontWeight.normal

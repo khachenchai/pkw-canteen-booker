@@ -125,10 +125,13 @@ class _CreateAccountState extends State<CreateAccount> {
     );
   }
 
-  ShowTitle buildSubTitle() {
-    return ShowTitle(
-      title: 'เป็นภาพแสดงตัวตนของ User หากไม่ใส่ เราจะแสดงภาพเป็น Default แทน',
-      textStyle: MyConstant().h3Style(),
+  Widget buildSubTitle() {
+    return Padding(
+      padding: const EdgeInsets.only(left: 25),
+      child: ShowTitle(
+        title: 'เป็นภาพแสดงตัวตนของ User หากไม่ใส่ เราจะแสดงภาพเป็น Default แทน',
+        textStyle: MyConstant().h3kanit(),
+      ),
     );
   }
 
@@ -143,7 +146,7 @@ class _CreateAccountState extends State<CreateAccount> {
       },
       title: ShowTitle(
         title: 'ผู้ซื้อ (Buyer)',
-        textStyle: MyConstant().h3Style(),
+        textStyle: MyConstant().h3kanit(),
       ),
     );
   }
@@ -159,7 +162,7 @@ class _CreateAccountState extends State<CreateAccount> {
       },
       title: ShowTitle(
         title: 'ผู้ขาย (Seller)',
-        textStyle: MyConstant().h3Style(),
+        textStyle: MyConstant().h3kanit(),
       ),
     );
   }
@@ -167,7 +170,7 @@ class _CreateAccountState extends State<CreateAccount> {
   Container buildTitle(String title) {
     return Container(
       margin: EdgeInsets.symmetric(vertical: 16),
-      child: ShowTitle(title: title, textStyle: GoogleFonts.kanit(fontSize: 20)),
+      child: ShowTitle(title: title, textStyle: MyConstant().h2kanit()),
     );
   }
 
