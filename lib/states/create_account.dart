@@ -2,7 +2,7 @@
 import 'dart:io';
 
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
+// import 'package:google_fonts/google_fonts.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:pkw_canteen_booker/utility/my_constant.dart';
 import 'package:pkw_canteen_booker/utility/my_dialog.dart';

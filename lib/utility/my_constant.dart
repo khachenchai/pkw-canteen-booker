@@ -17,11 +17,14 @@ class MyConstant {
   static String image1 = 'images/image1.png';
   static String image2 = 'images/image2.png';
   static String avatar = 'images/avatar.png';
+  static String chef = 'images/chef.png';
 
   //Color
+  static Color bgColor = Color(0xffdefff2);
   static Color primary = Color(0xffa8cc44);
   static Color dark = Color(0xff769b05);
   static Color light = Color(0xffdcff75);
+  static Color roll = Color(0xff4D4D4D);
 
   //Style
   TextStyle h1Style() => TextStyle(
