@@ -48,7 +48,7 @@ class _AuthenState extends State<Authen> {
       children: [
         ShowTitle(
           title: 'No Account ? ',
-          textStyle: MyConstant().h3Style(),
+          textStyle: MyConstant().h3Style(MyConstant.dark),
         ),
         TextButton(
           onPressed: () => Navigator.pushNamed(context, MyConstant.routeCreateAccount),
@@ -83,7 +83,7 @@ class _AuthenState extends State<Authen> {
           width: size * 0.6,
           child: TextFormField(
             decoration: InputDecoration(
-              labelStyle: MyConstant().h3Style(),
+              labelStyle: MyConstant().h3Style(MyConstant.dark),
               labelText: 'User :',
               prefixIcon: Icon(Icons.account_circle),
               enabledBorder: OutlineInputBorder(
@@ -120,7 +120,7 @@ class _AuthenState extends State<Authen> {
                     : Icon(Icons.remove_red_eye_outlined,
                         color: MyConstant.dark),
               ),
-              labelStyle: MyConstant().h3Style(),
+              labelStyle: MyConstant().h3Style(MyConstant.dark),
               labelText: 'Password :',
               prefixIcon: Icon(Icons.lock),
               enabledBorder: OutlineInputBorder(
@@ -142,7 +142,7 @@ class _AuthenState extends State<Authen> {
       children: [
         ShowTitle(
           title: MyConstant.appName,
-          textStyle: MyConstant().h1Style(),
+          textStyle: MyConstant().h1Style(MyConstant.dark),
         ),
       ],
     );

@@ -136,7 +136,7 @@ class _CreateAccountState extends State<CreateAccount> {
       padding: const EdgeInsets.only(left: 25),
       child: ShowTitle(
         title: 'เป็นภาพแสดงตัวตนของ User หากไม่ใส่ เราจะแสดงภาพเป็น Default แทน',
-        textStyle: MyConstant().h3kanit(),
+        textStyle: MyConstant().h3kanit(MyConstant.dark),
       ),
     );
   }
@@ -152,7 +152,7 @@ class _CreateAccountState extends State<CreateAccount> {
       },
       title: ShowTitle(
         title: 'ผู้ซื้อ (Buyer)',
-        textStyle: MyConstant().h3kanit(),
+        textStyle: MyConstant().h3kanit(MyConstant.dark),
       ),
     );
   }
@@ -168,7 +168,7 @@ class _CreateAccountState extends State<CreateAccount> {
       },
       title: ShowTitle(
         title: 'ผู้ขาย (Seller)',
-        textStyle: MyConstant().h3kanit(),
+        textStyle: MyConstant().h3kanit(MyConstant.dark),
       ),
     );
   }
@@ -176,7 +176,7 @@ class _CreateAccountState extends State<CreateAccount> {
   Container buildTitle(String title) {
     return Container(
       margin: EdgeInsets.symmetric(vertical: 16),
-      child: ShowTitle(title: title, textStyle: MyConstant().h2kanit()),
+      child: ShowTitle(title: title, textStyle: MyConstant().h2kanit(MyConstant.dark)),
     );
   }
 
@@ -195,7 +195,7 @@ class _CreateAccountState extends State<CreateAccount> {
               } else {}
             },
             decoration: InputDecoration(
-              labelStyle: MyConstant().h3Style(),
+              labelStyle: MyConstant().h3Style(MyConstant.dark),
               labelText: 'Name :',
               prefixIcon: Icon(Icons.person),
               enabledBorder: OutlineInputBorder(
@@ -226,7 +226,7 @@ class _CreateAccountState extends State<CreateAccount> {
               } else {}
             },
             decoration: InputDecoration(
-              labelStyle: MyConstant().h3Style(),
+              labelStyle: MyConstant().h3Style(MyConstant.dark),
               labelText: '(Gmail) @pkw.ac.th :',
               prefixIcon: Icon(Icons.mail_outline),
               enabledBorder: OutlineInputBorder(
@@ -257,7 +257,7 @@ class _CreateAccountState extends State<CreateAccount> {
               } else {}
             },
             decoration: InputDecoration(
-              labelStyle: MyConstant().h3Style(),
+              labelStyle: MyConstant().h3Style(MyConstant.dark),
               labelText: 'Password :',
               prefixIcon: Icon(Icons.lock_outline),
               enabledBorder: OutlineInputBorder(

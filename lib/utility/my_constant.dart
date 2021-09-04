@@ -12,6 +12,7 @@ class MyConstant {
   static String routeBuyerSurvice = '/buyerService';
   static String routeSellerSurvice = '/sellerService';
   static String routeChooseRoll = '/chooseRoll';
+  static String routeShowShop = '/showShop';
 
   //Image
   static String image1 = 'images/image1.png';
@@ -27,34 +28,34 @@ class MyConstant {
   static Color roll = Color(0xff4D4D4D);
 
   //Style
-  TextStyle h1Style() => TextStyle(
+  TextStyle h1Style(Color color) => TextStyle(
     fontSize: 24,
-    color: dark,
+    color: color,
     fontWeight: FontWeight.bold
   );
-  TextStyle h2Style() => TextStyle(
+  TextStyle h2Style(Color color) => TextStyle(
     fontSize: 18,
-    color: dark,
+    color: color,
     fontWeight: FontWeight.w700
   );
-  TextStyle h3Style() => TextStyle(
+  TextStyle h3Style(Color color) => TextStyle(
     fontSize: 14,
-    color: dark,
+    color: color,
     fontWeight: FontWeight.normal
   );
-  TextStyle h1kanit() => GoogleFonts.kanit(
+  TextStyle h1kanit(Color color) => GoogleFonts.kanit(
     fontSize: 24,
-    color: Colors.black,
+    color: color,
     fontWeight: FontWeight.bold
   );
-  TextStyle h2kanit() => GoogleFonts.kanit(
+  TextStyle h2kanit(Color color) => GoogleFonts.kanit(
     fontSize: 18,
-    color: Colors.black,
+    color: color,
     fontWeight: FontWeight.w600
   );
-  TextStyle h3kanit() => GoogleFonts.kanit(
+  TextStyle h3kanit(Color color) => GoogleFonts.kanit(
     fontSize: 14,
-    color: dark,
+    color: color,
     fontWeight: FontWeight.normal
   );
 

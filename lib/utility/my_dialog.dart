@@ -15,11 +15,11 @@ class MyDialog {
           ),
           title: ShowTitle(
             title: title,
-            textStyle: MyConstant().h2Style(),
+            textStyle: MyConstant().h2Style(MyConstant.roll),
           ),
           subtitle: ShowTitle(
             title: message,
-            textStyle: MyConstant().h3Style(),
+            textStyle: MyConstant().h3Style(MyConstant.roll),
           ),
         ),
         children: [TextButton(onPressed: () => Navigator.pop(context), child: Text('OK'))],
