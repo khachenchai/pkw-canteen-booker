@@ -11,6 +11,11 @@ class ShowShop extends StatefulWidget {
 
 class _ShowShopState extends State<ShowShop> {
   bool trigger = false;
+  void check() {
+    setState(() {
+      trigger = !trigger;
+    });
+  }
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -19,7 +24,7 @@ class _ShowShopState extends State<ShowShop> {
           children: <Widget>[
             Card(
               elevation: 0,
-              color: MyConstant.bgColor,
+              color: trigger ? Colors.red.withOpacity(0.3) : MyConstant.bgColor,
               child: Row(
                 mainAxisAlignment: trigger ? MainAxisAlignment.end : MainAxisAlignment.center,
                 children: [
@@ -28,11 +33,7 @@ class _ShowShopState extends State<ShowShop> {
               ),
             ),
             SizedBox(height: 15,),
-            TextButton(onPressed: () {
-              setState(() {
-                trigger = !trigger;
-              });
-            }, 
+            TextButton(onPressed: () => check(), 
             child: ShowTitle(title: "Wow", textStyle: MyConstant().h1Style(MyConstant.dark),))
           ],
         ),
@@ -40,3 +41,4 @@ class _ShowShopState extends State<ShowShop> {
     );
   }
 }
+
